@@ -10,7 +10,7 @@ public class PlayerSelection {
         String eligibility;
         String finalDecision;
         String position;
-        String attakerJersey;
+        String attackerJersey;
         int age;
         int jersey_number;
         double weight;
@@ -108,9 +108,9 @@ public class PlayerSelection {
         }
         // Code for checking if player has an attacker jersey
         if (jersey_number == 7 || jersey_number == 9 || jersey_number == 10 || jersey_number == 11) {
-            attakerJersey = "Yes";
+            attackerJersey = "Yes";
         } else {
-            attakerJersey = "No";
+            attackerJersey = "No";
         }
 
 
@@ -136,7 +136,7 @@ public class PlayerSelection {
             System.out.println("Weight: [" + weightInKg + "kg]");
             System.out.println("Jersey:[" + jersey_number + "]");
             System.out.println("Position: [" + position + "]");
-            System.out.println("Attacker jersey: [" + attakerJersey + "]");
+            System.out.println("Attacker jersey: [" + attackerJersey + "]");
             System.out.println("Eligibility: [" + eligibility + "]");
             System.out.println("Lineup Decision: [" + lineUpDecision + "]");
             System.out.println("Final Decision: [" + finalDecision + "]");
