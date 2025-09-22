@@ -145,7 +145,15 @@ public class PlayerSelection {
         }
 
     }
-
+// git hub comment
+//For Task one,I declared variables for the player details.That is  name, age, height (in meters), weight (in pounds),and jersey number.
+//I declared a constant which would be used in the conversion of the weight to kilograms and the height to centimeters.
+//I created a new variable for weight in kg and height in centimeters
+//I created a code for the  coach  to check if a player is eligible to play or not based on the criteria given
+//Based on the ages of the players they were categorised
+//A switch case was made to ssign position based on jersey number.
+//The number on the jersey determines if the player is an attacker or not
+//To select  a player for starting lineup. The  category the player must fall in is Prime Player if not the bench
 
 
 
