@@ -11,6 +11,7 @@ public class PlayerSelection {
         String finalDecision;
         String position;
         String attackerJersey;
+        String category;
         int age;
         int jersey_number;
         double weight;
@@ -68,11 +69,11 @@ public class PlayerSelection {
         //Task 5
         //Categorizing players by age
         if (age < 20) {
-            System.out.println("Rising Star");
+            category ="Rising Star";
         } else if (age >= 20 && age < 30) {
-            System.out.println("Prime Player");
-        } else if (age > 30) {
-            System.out.println("Veteran");
+            category = "Prime Player";
+        } else {
+            category ="Veteran";
         }
 
         //Task 5
@@ -131,7 +132,7 @@ public class PlayerSelection {
              //Task 10
             System.out.println("Player Report");
             System.out.println("Player: [" + name + "]");
-            System.out.println(("Age: [" + age + "]"));
+            System.out.println("Age: [" + age + "]" +("[" + category +"]"));
             System.out.println("Height: [" + heightInCentimeters + "cm]");
             System.out.println("Weight: [" + weightInKg + "kg]");
             System.out.println("Jersey:[" + jersey_number + "]");
