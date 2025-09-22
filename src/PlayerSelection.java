@@ -10,7 +10,8 @@ public class PlayerSelection {
         String eligibility;
         String finalDecision;
         String position;
-        String attakerJersey;
+        String attackerJersey;
+        String category ;
         int age;
         int jersey_number;
         double weight;
@@ -50,7 +51,7 @@ public class PlayerSelection {
         int heightInCentimeters = (int) convertingHeight;
 
 
-        //Task 3 Increment and Decrement
+
 
         //Task 4
         //Checking eligibility of player
@@ -68,14 +69,14 @@ public class PlayerSelection {
         //Task 5
         //Categorizing players by age
         if (age < 20) {
-            System.out.println("Rising Star");
+            category ="Rising Star";
         } else if (age >= 20 && age < 30) {
-            System.out.println("Prime Player");
-        } else if (age > 30) {
-            System.out.println("Veteran");
+            category ="Prime Player";
+        } else  {
+            category ="Veteran";
         }
 
-        //Task 5
+
         //Using Switch Cases to assign position based on jersey number
         switch (jersey_number) {
             case 1:
@@ -108,12 +109,12 @@ public class PlayerSelection {
         }
         // Code for checking if player has an attacker jersey
         if (jersey_number == 7 || jersey_number == 9 || jersey_number == 10 || jersey_number == 11) {
-            attakerJersey = "Yes";
+            attackerJersey = "Yes";
         } else {
-            attakerJersey = "No";
+            attackerJersey = "No";
         }
 
-        //Task 8
+
 
         if (age >= 20 && age < 30) {
             if (weightInKg < 80) {
@@ -131,12 +132,12 @@ public class PlayerSelection {
              //Task 10
             System.out.println("Player Report");
             System.out.println("Player: [" + name + "]");
-            System.out.println(("Age: [" + age + "]"));
+            System.out.println("Age: [" + age + "]" + "[" + category +"]");
             System.out.println("Height: [" + heightInCentimeters + "cm]");
             System.out.println("Weight: [" + weightInKg + "kg]");
             System.out.println("Jersey:[" + jersey_number + "]");
             System.out.println("Position: [" + position + "]");
-            System.out.println("Attacker jersey: [" + attakerJersey + "]");
+            System.out.println("Attacker jersey: [" + attackerJersey + "]");
             System.out.println("Eligibility: [" + eligibility + "]");
             System.out.println("Lineup Decision: [" + lineUpDecision + "]");
             System.out.println("Final Decision: [" + finalDecision + "]");
@@ -145,8 +146,3 @@ public class PlayerSelection {
         }
 
     }
-
-
-
-
-
